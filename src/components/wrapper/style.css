@@ -1,0 +1,108 @@
+.wrapper {
+    padding-top: 50px;
+    background: white;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    justify-content: space-around;
+    align-content: flex-start;
+    overflow: auto;
+  }
+  .bg {
+    background-image: url("../../image/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 200px 50px 200px 50px;
+    border-bottom: 4px solid rgba(128, 128, 128, 0.486);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .bg > h2 {
+    font-weight: bold;
+  }
+  .container-fluid {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1280px;
+  }
+  .navbar {
+    padding: 15px 20px;
+    border-bottom: 4px solid rgba(128, 128, 128, 0.295);
+    color: rgba(28, 71, 50, 0.747);
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .title {
+    font-weight: bold;
+    color: rgba(27, 68, 48, 0.747);
+    font-size: 1.5rem;
+  }
+  a:hover {
+    color: rgba(27, 68, 48, 0.747);
+    text-decoration: none;
+  }
+  .footer {
+    height: 50px;
+    background-color: rgba(230, 230, 230, 0.658);
+    border-top: 4px solid rgba(128, 128, 128, 0.295);
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.2rem;
+  }
+  .footer > a {
+    color: rgba(54, 54, 54, 0.767);
+  }
+  .correct {
+    animation-name: colorchangeCorrect;
+    animation-duration: 1.5s;
+  }
+  
+  .incorrect {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+  @keyframes colorchangeCorrect {
+    0% {
+      color: rgba(28, 71, 50, 0.747);
+    }
+    25% {
+      color: rgba(101, 228, 167, 0.911);
+    }
+    50% {
+      color: rgba(28, 71, 50, 0.747);
+    }
+    75% {
+      color: rgba(101, 228, 167, 0.911);
+    }
+    100% {
+      color: rgba(28, 71, 50, 0.747);
+    }
+  }
+  
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+  
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+      color: rgba(192, 94, 37, 0.979);
+    }
+  
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+      color: rgba(192, 94, 37, 0.979);
+    }
+  }
