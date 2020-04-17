@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function ImageCard(props) {
+function Card(props) {
   return (
     <div className="card">
       <div className="img-container">
@@ -17,4 +17,4 @@ function ImageCard(props) {
   );
 }
 
-export default ImageCard;
+export default Card;

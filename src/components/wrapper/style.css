@@ -10,7 +10,7 @@
     overflow: auto;
   }
   .bg {
-    background-image: url("../../image/bg.jpg");
+    /* background-image: url("../../image/bg.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;

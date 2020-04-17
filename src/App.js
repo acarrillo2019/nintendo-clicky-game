@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import images from "./images.json";
-import ImageCard from "./components/ImageCard";
+import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
 shuffle(images);
 class App extends Component {
@@ -56,7 +56,7 @@ class App extends Component {
       >
         {this.state.images.map(image => {
           return (
-            <ImageCard
+            <Card
               key={image.id}
               id={image.id}
               image={image.imageSrc}
