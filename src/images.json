@@ -142,5 +142,11 @@
       "name": "zelda",
       "imageSrc": "./images/zelda.png",
       "clicked": false
-    }
+    },
+    {
+        "id": "24",
+        "name": "zelda2",
+        "imageSrc": "./images/zelda2.png",
+        "clicked": false
+      }
   ]

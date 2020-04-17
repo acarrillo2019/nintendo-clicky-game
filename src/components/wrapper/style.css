@@ -32,9 +32,10 @@
   .navbar {
     padding: 15px 20px;
     border-bottom: 4px solid rgba(128, 128, 128, 0.295);
-    color: rgba(28, 71, 50, 0.747);
+    color: rgba(255, 0, 0, 0.747);
     font-size: 1.2rem;
     font-weight: bold;
+    background-color: rgb(231, 0, 9);
   }
   .title {
     font-weight: bold;
@@ -47,7 +48,7 @@
   }
   .footer {
     height: 50px;
-    background-color: rgba(230, 230, 230, 0.658);
+    background-color: rgb(231, 0, 9);
     border-top: 4px solid rgba(128, 128, 128, 0.295);
     text-align: center;
     padding-top: 10px;
