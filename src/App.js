@@ -3,9 +3,7 @@ import images from "./images.json";
 import ImageCard from "./components/ImageCard";
 import Wrapper from "./components/Wrapper";
 shuffle(images);
-
 class App extends Component {
-
   state = {
     images: images,
     score: 0,
@@ -13,13 +11,11 @@ class App extends Component {
     text: "Click an image to begin!",
     class: ""
   };
-
   animEnd = () => {
     this.setState({
       class: ""
     });
   };
-
   isClicked = (boolean, id) => {
     if (boolean) {
       this.state.images.map(element => {
@@ -49,8 +45,38 @@ class App extends Component {
       });
     }
   };
+  render() {
+    return (
+      <Wrapper
+        score={this.state.score}
+        topScore={this.state.topScore}
+        text={this.state.text}
+        class={this.state.class}
+        anim={this.animEnd}
+      >
+        {this.state.images.map(image => {
+          return (
+            <ImageCard
+              key={image.id}
+              id={image.id}
+              image={image.imageSrc}
+              name={image.name}
+              clicked={image.clicked}
+              isClicked={this.isClicked}
+            />
+          );
+        })}
+      </Wrapper>
+    );
+  }
+}
 
-
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
 
 export default App;
