@@ -18,7 +18,7 @@ The application will increment your score for each image you click the first tim
 **Game Over**.
 
 
-# Link to game: [Nintendo Clicky Game!!!](https://aqueous-falls-51327.herokuapp.com/)
+# Link to game: [Nintendo Clicky Game!!!](https://acarrillo2019.github.io/nintendo-clicky-game/)
 
 
 ## Characters:
