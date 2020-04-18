@@ -50,5 +50,4 @@ Link to game: [Nintendo Clicky Game!!!](https://aqueous-falls-51327.herokuapp.co
     * React
     * Bootstrap
 
-    
-![](nintendo-clicky-game-try-again.PNG)
+![](screenshots/nintendo-clicky-game-try-again.PNG)
