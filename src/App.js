@@ -4,12 +4,13 @@ import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
 import UIfx from 'uifx';
 import coin from './sounds/smb_coin.mp3';
-import oops from './smb_jump-small.mp3';
+import oops from './sounds/smb_mariodie.mp3';
 
-const coin = new UIFx({asset: coin});
-const oops = new UIfx({asset: oops});
+const coins = new UIfx({asset: coin});
+const oopsie = new UIfx({asset: oops});
 
 shuffle(images);
+
 class App extends Component {
   state = {
     images: images,
@@ -29,13 +30,14 @@ class App extends Component {
         return (element.clicked = false);
       });
       shuffle(this.state.images);
+      
       this.setState({
-        
         images: images,
         score: 0,
         topScore: this.state.score,
         text: "Too bad! Try again.",
-        class: "incorrect"
+        class: "incorrect",
+        oopsie: oopsie
       }
       );
     } else {
@@ -44,14 +46,16 @@ class App extends Component {
           element.clicked = true;
         }
         return element;
-      });
+      }); 
       shuffle(this.state.images);
       this.setState({
         images: images,
         score: this.state.score + 1,
         text: "Keep going!",
-        class: "correct"
+        class: "correct",
+        coins: this.state.value
       });
+      
     }
   };
   render() {
@@ -62,6 +66,8 @@ class App extends Component {
         text={this.state.text}
         class={this.state.class}
         anim={this.animEnd}
+        coin={coins}
+        oopsie={oopsie}
       >
         {this.state.images.map(image => {
           return (
@@ -72,10 +78,12 @@ class App extends Component {
               name={image.name}
               clicked={image.clicked}
               isClicked={this.isClicked}
+              
             />
           );
         })}
       </Wrapper>
+      
     );
   }
 }
