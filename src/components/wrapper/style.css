@@ -1,3 +1,10 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding-top: 65px; 
+  background-color: rgb(231, 0, 9);
+}
 .wrapper {
     padding-top: 50px;
     background: white;
@@ -9,20 +16,15 @@
     align-content: flex-start;
     overflow: auto;
   }
-  .bg {
-    /* background-image: url("../../image/bg.jpg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding: 200px 50px 200px 50px;
-    border-bottom: 4px solid rgba(128, 128, 128, 0.486);
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 2.5rem;
+  .game{
+    height: 100%;
+    background-color: rgb(231, 0, 9);
   }
-  .bg > h2 {
-    font-weight: bold;
+  .gamenav{
+    background-color: rgb(231, 0, 9);
+  }
+  .logo{
+    background-image: url("../../image/nintendo-logo.png");
   }
   .container-fluid {
     margin: 0 auto;
@@ -31,8 +33,6 @@
   }
   .navbar {
     padding: 15px 20px;
-    border-bottom: 4px solid rgba(128, 128, 128, 0.295);
-    color: rgba(255, 0, 0, 0.747);
     font-size: 1.2rem;
     font-weight: bold;
     background-color: rgb(231, 0, 9);
@@ -49,7 +49,6 @@
   .footer {
     height: 50px;
     background-color: rgb(231, 0, 9);
-    border-top: 4px solid rgba(128, 128, 128, 0.295);
     text-align: center;
     padding-top: 10px;
     font-size: 1.2rem;
