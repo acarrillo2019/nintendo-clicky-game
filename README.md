@@ -17,6 +17,10 @@ Test your memory... Click on a Nintendo character and try to click on all charac
 The application will increment your score for each image you click the first time. If you click on a character twice... 
 **Game Over**.
 
+
+# Link to game: [Nintendo Clicky Game!!!](https://aqueous-falls-51327.herokuapp.com/)
+
+
 ## Characters:
 
 * Mario     ![](screenshots/mario_red.png)            
@@ -41,9 +45,13 @@ The application will increment your score for each image you click the first tim
 
 ![](screenshots/fox_mccloud.png)
 
-Link to game: [Nintendo Clicky Game!!!](https://aqueous-falls-51327.herokuapp.com/)
+  
 
-![](screenshots/luigi_kart.png)
+
+
+   
+
+
 
 ## Technology
 
@@ -51,3 +59,7 @@ Link to game: [Nintendo Clicky Game!!!](https://aqueous-falls-51327.herokuapp.co
     * Bootstrap
 
 ![](screenshots/nintendo-clicky-game-try-again.PNG)
+
+  
+   
+   ![](screenshots/luigi_kart.png)
