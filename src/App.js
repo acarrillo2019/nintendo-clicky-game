@@ -2,13 +2,20 @@ import React, { Component } from "react";
 import images from "./images.json";
 import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
+import UIfx from 'uifx';
+import coin from './sounds/smb_coin.mp3';
+import oops from './smb_jump-small.mp3';
+
+const coin = new UIFx({asset: coin});
+const oops = new UIfx({asset: oops});
+
 shuffle(images);
 class App extends Component {
   state = {
     images: images,
     score: 0,
     topScore: 0,
-    text: "Click an image to begin!",
+    text: "Click an image only once!",
     class: ""
   };
   animEnd = () => {
@@ -23,12 +30,14 @@ class App extends Component {
       });
       shuffle(this.state.images);
       this.setState({
+        
         images: images,
         score: 0,
         topScore: this.state.score,
-        text: "You guessed incorrectly!",
+        text: "Too bad! Try again.",
         class: "incorrect"
-      });
+      }
+      );
     } else {
       this.state.images.map(element => {
         if (element.id === id) {
@@ -40,7 +49,7 @@ class App extends Component {
       this.setState({
         images: images,
         score: this.state.score + 1,
-        text: "You guessed correctly!",
+        text: "Keep going!",
         class: "correct"
       });
     }

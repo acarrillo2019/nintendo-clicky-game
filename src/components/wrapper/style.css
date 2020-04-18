@@ -19,12 +19,10 @@ html, body {
   .game{
     height: 100%;
     background-color: rgb(231, 0, 9);
+    color: white;
   }
   .gamenav{
     background-color: rgb(231, 0, 9);
-  }
-  .logo{
-    background-image: url("../../image/nintendo-logo.png");
   }
   .container-fluid {
     margin: 0 auto;
