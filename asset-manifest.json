@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/nintendo-clicky-game/static/css/main.d8ab594d.chunk.css",
+    "main.js": "/nintendo-clicky-game/static/js/main.c2c1c341.chunk.js",
+    "main.js.map": "/nintendo-clicky-game/static/js/main.c2c1c341.chunk.js.map",
+    "runtime-main.js": "/nintendo-clicky-game/static/js/runtime-main.13e82dd4.js",
+    "runtime-main.js.map": "/nintendo-clicky-game/static/js/runtime-main.13e82dd4.js.map",
+    "static/js/2.7b786aab.chunk.js": "/nintendo-clicky-game/static/js/2.7b786aab.chunk.js",
+    "static/js/2.7b786aab.chunk.js.map": "/nintendo-clicky-game/static/js/2.7b786aab.chunk.js.map",
+    "index.html": "/nintendo-clicky-game/index.html",
+    "precache-manifest.4a307c76b9df7f6b97cb6014276d9193.js": "/nintendo-clicky-game/precache-manifest.4a307c76b9df7f6b97cb6014276d9193.js",
+    "service-worker.js": "/nintendo-clicky-game/service-worker.js",
+    "static/css/main.d8ab594d.chunk.css.map": "/nintendo-clicky-game/static/css/main.d8ab594d.chunk.css.map",
+    "static/js/2.7b786aab.chunk.js.LICENSE.txt": "/nintendo-clicky-game/static/js/2.7b786aab.chunk.js.LICENSE.txt",
+    "static/media/smb_coin.mp3": "/nintendo-clicky-game/static/media/smb_coin.0603a1ff.mp3",
+    "static/media/smb_mariodie.mp3": "/nintendo-clicky-game/static/media/smb_mariodie.6fd42228.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.13e82dd4.js",
+    "static/js/2.7b786aab.chunk.js",
+    "static/css/main.d8ab594d.chunk.css",
+    "static/js/main.c2c1c341.chunk.js"
+  ]
+}
